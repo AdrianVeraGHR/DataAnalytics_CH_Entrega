@@ -10,8 +10,8 @@ Las transformaciones efectuadas sobre la tabla fueron:
   - Ordenar cada tabla en base a su columna de ID
   - Eliminar repetidos en base al ID
   - Eliminar filas que sean completamente 'null'
-  - Reemplazar los valores 'null' por un el símbolo '-'
-  - Reemplazar los errores por 0
+  - Reemplazar los valores 'null' por un el símbolo '-' en aquellas columnas que son compatibles con textos
+  - Reemplazar los valores 'null' por 0 en aquellas columnas que son compatibles con valores numéricos
   - Aplicar cambios
 
 - Por qué elegiste cada tipo de dato.
@@ -26,7 +26,7 @@ Las transformaciones efectuadas sobre la tabla fueron:
 - Cómo resolviste los valores nulos y duplicados encontrados.
 
   Para resolver los:
-    - Valores nulos: Utilizado la herramienta de "reemplazar valores" busque todos los campos que tuvieran el valor null, y los reemplace por '-'. Luego los que generasen error, los reemplacé por 0
+    - Valores nulos: Utilizado la herramienta de "reemplazar valores" busque todos los campos que tuvieran el valor null, y los reemplace por '-' en aquellas columnas que son compatibles con textos. Aquellas columnas que son compatibles con valores numéricos, los reemplacé por 0
     - Valores duplicados: Utilizando la función de "Quitar filas" seleccione eliminar duplicados, utilizando de referencia las columnas ID de cada tabla
 
 - Qué criterio usaste para separar los datos del cliente de los de la transacción.
